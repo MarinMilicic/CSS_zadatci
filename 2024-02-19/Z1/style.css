@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header,
+footer {
+    background-color: lightgrey;
+    height: 10vh;
+    padding: 10px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    height: 80vh;
+    padding: 1em;
+}
+
+section,
+article,
+aside {
+    border: 1px solid lightgrey;
+    padding: 1em;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: space-between;
+    width: 71%;
+}
+
+article {
+    height: 24%;
+    width: 49%;
+}
+
+aside {
+    width: 27%;
+}
