@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+    background: fixed url("blur-clean.jpg") center/cover no-repeat;
+}
+
+.wrapper div {
+    height: 250px;
+    width: 300px;
+    border: 2px solid white;
+    color: white;
+    font-family: Tahoma, sans-serif;
+    text-align: center;
+    line-height: 240px;
+    font-size: 100px;
+    font-weight: bold;
+}
+
+.wrapper div:nth-of-type(1) {
+    background-color: rgba(63, 61, 61, 0.9);
+    animation: anim 1.5s reverse ease-in-out backwards;
+}
+
+.wrapper div:nth-of-type(2) {
+    background-color: rgba(173, 27, 27, 0.5);
+    animation: anim 1.5s 1.5s reverse ease-in-out backwards;
+}
+
+.wrapper div:nth-of-type(3) {
+    background-color: rgba(179, 115, 43, 0.7);
+    animation: anim 1.5s 3s reverse ease-in-out backwards;
+}
+
+@keyframes anim {
+    100% {
+        transform: translate(0px, -100vh)
+    }
+}
